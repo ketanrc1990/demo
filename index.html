@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
   <body>
-    <h1>KC Demo</h1>  
+    <h1>KC Screen Check</h1>
+    <h2>Screen Height: <span id="h"></span></h2>
+    <h2>Screen Width: <span id="w"></span></h2>
+    <h2>iOS: <span id="iOS"></span></h2>
+    
+    <script>
+      $("#h").($(window).height());
+      $("#w").($(window).width());
+      $("#iOS").(/iPad|iPhone|iPod/.test(navigator.userAgent || navigator.vendor || window.opera) && !window.MSStream);
+    </script>
+    
   </body>
 </html>
