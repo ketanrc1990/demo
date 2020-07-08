@@ -10,9 +10,9 @@
     <h2>iOS: <span id="iOS"></span></h2>
     
     <script>
-      $("#h").($(window).height());
-      $("#w").($(window).width());
-      $("#iOS").(/iPad|iPhone|iPod/.test(navigator.userAgent || navigator.vendor || window.opera) && !window.MSStream);
+      $("#h").html($(window).height());
+      $("#w").html($(window).width());
+      $("#iOS").html(/iPad|iPhone|iPod/.test(navigator.userAgent || navigator.vendor || window.opera) && !window.MSStream);
     </script>
     
   </body>
