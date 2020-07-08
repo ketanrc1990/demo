@@ -12,7 +12,7 @@
     <script>
       $("#h").html($(window).height());
       $("#w").html($(window).width());
-      $("#iOS").html(/iPad|iPhone|iPod/.test(navigator.userAgent || navigator.vendor || window.opera) && !window.MSStream);
+      $("#iOS").html(/iPad|iPhone|iPod/.test(navigator.userAgent || navigator.vendor || window.opera) && !window.MSStream ? "Yes" : "No");
     </script>
     
   </body>
