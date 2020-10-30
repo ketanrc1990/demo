@@ -26,7 +26,7 @@
           return true;
       }
       
-      $("input[type=tel]").on("keypress", function (event) {
+      $("input[type=tel]").on("input", function (event) {
           return onlyNumbers1(event);
       });
       
