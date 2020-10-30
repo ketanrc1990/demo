@@ -14,6 +14,22 @@
       $("#h").html($(window).height());
       $("#w").html($(window).width());
       $("#iOS").html(/iPad|iPhone|iPod/.test(navigator.userAgent || navigator.vendor || window.opera) && !window.MSStream ? "Yes" : "No");
+      
+      // function to get only numbers
+      function onlyNumbers1(event) {
+          var expr = /\d/;
+          if (!expr.test(event.originalEvent.key)) {
+              event.returnValue = false;
+              event.preventDefault();
+              return false;
+          }
+          return true;
+      }
+      
+      $("input[type=tel]").on("keypress", function (event) {
+          return onlyNumbers1(event);
+      });
+      
     </script>
     
   </body>
