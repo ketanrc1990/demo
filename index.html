@@ -27,7 +27,7 @@
       }
       
       $("input[type=tel]").on("keyup", function (event) {
-          alert("keyup")
+          this.value = this.value.replace(/\D/g, '');
       });
       
     </script>
