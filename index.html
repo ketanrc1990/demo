@@ -26,8 +26,8 @@
           return true;
       }
       
-      $("input[type=tel]").on("input", function (event) {
-          return onlyNumbers1(event);
+      $("input[type=tel]").on("keyup", function (event) {
+          alert("keyup")
       });
       
     </script>
